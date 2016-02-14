@@ -1,6 +1,6 @@
 {
   "name": "accelerated.angular",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Quick AngularJS app creation with built-in modules, pairs well with accelerated.api.",
   "main": "index.js",
   "scripts": {
