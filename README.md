@@ -1,5 +1,5 @@
 
-## npm install accelerated.angular
+## npm install accelerated.angular --save
 Quick AngularJS app creation with built-in modules, pairs well with accelerated.api.
 
 ### env.json
