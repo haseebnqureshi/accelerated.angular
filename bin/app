@@ -1,0 +1,38 @@
+#!/usr/bin/env node
+
+var cli = require('cli');
+var run = require('child_process').spawn;
+var path = require('path');
+
+var options = {
+	directory: ['d', 'Specify directory', 'string', 'www']
+};
+var commands = {
+	angular: ['install angular into specified directory (default current directory)']
+};
+
+cli.parse(options, commands);
+
+switch (cli.command) {
+	case 'angular':
+
+		var directory = path.join(process.env.HOME, cli.options.directory || 'www');
+
+		var child = run(__dirname + '/../lib/angular/install.sh', [ directory ]);
+
+		child.stdout.on('data', function(data) {
+			var line = data.toString().replace(/\n$/g, '');
+			console.log(line);
+		});
+
+		child.stderr.on('data', function(data) {
+			var line = data.toString().replace(/\n$/g, '');
+			console.log(line);
+		});
+
+		child.on('error', function(err) {
+			console.log(err);
+		});
+
+	break;
+}
