@@ -21,8 +21,6 @@
   "dependencies": {
     "angular": "~1.4.3",
     "angular-route": "~1.4.3",
-    "foundation": "~5.5.2",
-    "svg-loaders": "~1.0.2",
     "underscore": "~1.8.3",
     "angular-cookies": "~1.4.8",
     "angular-animate": "~1.4.8"
