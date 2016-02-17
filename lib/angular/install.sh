@@ -1,4 +1,4 @@
 #!/bin/bash
 
-cp bower.json $1
-cp .bowerrc $1
+cp $1/bower.json $2
+cp $1/.bowerrc $2

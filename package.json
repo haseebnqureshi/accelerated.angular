@@ -1,6 +1,6 @@
 {
   "name": "accelerated.angular",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "AngularJS boilerplate & micro-server ready-to-go",
   "main": "index.js",
   "scripts": {
@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/haseebnqureshi/accelerated.angular#readme",
   "dependencies": {
-    "accelerated.api": "^1.0.10",
+    "accelerated.api": "^1.0.11",
     "cli": "^0.11.1"
   }
 }
